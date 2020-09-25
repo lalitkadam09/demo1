@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="testLibrary.ExtentReporter"/>
+  </listeners>
+  <test thread-count="5" name="Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="mudule.test.login.KiteLoginTest">
+        <methods>
+          <include name="verifyProfileName"/>
+          <include name="loginKite"/>
+          <include name="logOutKite"/>
+          <include name="closeBrowser"/>
+          <include name="browserOpen"/>
+        </methods>
+      </class> <!-- mudule.test.login.KiteLoginTest -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
